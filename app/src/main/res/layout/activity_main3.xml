@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img"
+    tools:context=".MainActivity3" >
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:ems="10"
+        android:text="\n\t\t\t\t\tCustom Break-Down Calculator"
+        android:textSize="25sp"
+        android:textStyle="italic|bold">
+
+    </TextView>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="360dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_baseline_attach_money_24"
+            android:hint="\t\tTotal Bill Amount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="360dp"
+            android:layout_height="77dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_percent_svgrepo_com"
+            android:ems="10"
+            android:hint="\t\tPercentage for each people(%)"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et1"
+            app:layout_constraintVertical_bias="0.108" />
+
+        <Button
+            android:id="@+id/btnCal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="104dp"
+            android:text="CALCULATE"
+            android:background="@drawable/custom_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et3"
+            app:layout_constraintVertical_bias="0.25" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
